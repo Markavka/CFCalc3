@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #151A1D;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.ps {
+  padding: 20px;
+  color: #E52166;
+}
+
+.header {
+  margin: 40px 0 20px;
+  color: #FF9A17;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.calc {
+  width: 50%;
+  height: 100%;
+  margin: 20px;
+}
+
+.calc_1 {
+  width: 50%;
+  height: 100%;
+  margin: 20px;
+}
+
+.elem {
+  margin-bottom: 15px;
+}
+
+.elem p {
+  display: inline-block;
+}
+
+.elem input {
+  height: 20px;
+  max-width: 100%;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.button {
+  margin: 20px 0 30px;
+}
+
+.btn {
+  padding: 6px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 600;
+  color: #151A1D;
+}
+
+.break {
+  color: #F1C40F;
+  margin-bottom: 15px;
+}
+
+.type {
+  color: #FF9A17;
+  margin: 40px 0 25px;
+}
+
+.result {
+  margin-bottom: 15px;
+}
+
+.head {
+  margin-bottom: 40px;
+}
+
+.crit {
+  color: #00AB78;
+}
+
+.author {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
+
+.full {
+  color: #E52166;
+  margin-bottom: 40px;
+}
+
+.PB {
+  display: inline-block;
+  color: #C22A2A;
+}
+
+.ann {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #F1C40F;
+}
+
+.annP {
+  margin-bottom: 7px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.annotation {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.annotation .prompt {
+  min-width: 352px;
+  visibility: hidden;
+  background-color: #121619;
+  color: #fff;
+  border: 3px solid #E52166;
+  border-radius: 16px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.annotation #promptLkm, .annotation #prompt10Lkm, .annotation #prompt100Lkm {
+  left: 50%;
+}
+
+.annotation #promptLkm_1, .annotation #prompt10Lkm_1, .annotation #prompt100Lkm_1 {
+  right: 50%;
+}
+
+.annotation:hover .prompt {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .annotation .prompt {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .result {
+    margin-bottom: 10px;
+  }
+  .full {
+    margin-bottom: 30px;
+  }
+  .elem {
+    margin-bottom: 15px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ps {
+    padding: 10px;
+  }
+  .author {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 12px;
+  }
+  .calc, .calc_1 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .elem {
+    margin-bottom: 12px;
+  }
+  .elem p {
+    display: block;
+  }
+  .header {
+    margin: 20px 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ps {
+    padding: 30px 10px 10px;
+  }
+  .author {
+    top: 10px;
+    left: 10px;
+  }
+  .elem input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .header {
+    margin: 15px 0 5px;
+    font-size: 18px;
+  }
+}

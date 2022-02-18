@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<p class="ps">Результаты округляются в меньшую сторону*</p>
+	<p class="author">Кайне (Маркавка)</p>
+
+	<div class="header"><p class="exorcist">P90-Frenzy</p></div>
+
+	<main class="main">
+		<div class="calc">
+			<div class="elem">
+				<div><p>Урон:</p> <input class="elem1" id="damage" type="text" value="90"></div>
+			</div>
+			<div class="elem">
+				<div><p>Шанс:</p> <input class="elem2" id="chance" type="text" value="47"></div>
+			</div>
+			<div class="elem">
+				<div><p>Крит:</p> <input class="elem3" id="crit" type="text" value="800"></div>
+			</div>
+			<div class="elem">
+				<div><p>Фиолетовые:</p> <input class="elem4" id="purple" type="text" value="200"></div>
+			</div>
+			<div class="elem">
+				<div><p>Кол-во ВЗ:</p> <input class="elem6" id="pb" type="text" value="0"></div>
+			</div>
+			<div class="button"><button class="btn" onclick="calc()" >Посчитать</button></div>
+
+
+
+<!--                ЛКМ                -->
+
+			<div class="type annotation">
+				<p id="lkm"></p>
+				<span class="prompt" id="promptLkm"></span>
+			</div>
+			<p class="result" id="maxHeadDamage"></p>
+			<p class="result crit" id="maxHeadCrit"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxHeadDamagePB"></p>
+			<p class="result crit" id="maxHeadCritPB"></p><br>
+								<!--    -->
+
+					<!-- Шанс за 10 выстрелов -->
+			<div class="break annotation">
+				<p id="break10lkm"></p>
+				<span class="prompt" id="prompt10Lkm"></span>
+			</div>
+
+			<p class="result" id="maxChanceHeadDamage"></p>
+			<p class="result crit" id="maxChanceHeadCrit"></p>
+			<p class="result full" id="fullHead"></p>
+
+					<!-- Шанс за 100 выстрелов -->
+			<div class="break annotation">
+				<p id="break100lkm"></p>
+				<span class="prompt" id="prompt100Lkm"></span>
+			</div>
+
+			<p class="result" id="maxChanceHeadDamage100"></p>
+			<p class="result crit" id="maxChanceHeadCrit100"></p>
+			<p class="result full" id="fullHead100"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceHeadDamage100PB"></p>
+			<p class="result crit" id="maxChanceHeadCrit100PB"></p>
+			<p class="result full" id="fullHead100PB"></p>
+			<p class="result full" id="fullHead100PBSum"></p><br>
+								<!--    -->
+
+		</div>
+
+<!-- 000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+
+		<div class="calc_1">
+			<div class="elem">
+				<div><p>Урон:</p> <input class="elem1" id="damage_1" type="text" value="70"></div>
+			</div>
+			<div class="elem">
+				<div><p>Шанс:</p> <input class="elem2" id="chance_1" type="text" value="54"></div>
+			</div>
+			<div class="elem">
+				<div><p>Крит:</p> <input class="elem3" id="crit_1" type="text" value="800"></div>
+			</div>
+			<div class="elem">
+				<div><p>Фиолетовые:</p> <input class="elem4" id="purple_1" type="text" value="200"></div>
+			</div>
+			<div class="elem">
+				<div><p>Кол-во ВЗ:</p> <input class="elem6" id="pb_1" type="text" value="0"></div>
+			</div>
+			<div class="button"><button class="btn" onclick="calc_1()">Посчитать</button></div>
+
+
+
+<!--                ЛКМ                -->
+
+			<div class="type annotation">
+				<p id="lkm_1"></p>
+				<span class="prompt" id="promptLkm_1"></span>
+			</div>
+			<p class="result" id="maxHeadDamage_1"></p>
+			<p class="result crit" id="maxHeadCrit_1"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxHeadDamagePB_1"></p>
+			<p class="result crit" id="maxHeadCritPB_1"></p><br>
+								<!--    -->
+
+					<!-- Шанс за 10 выстрелов -->
+			<div class="break annotation">
+				<p id="break10lkm_1"></p>
+				<span class="prompt" id="prompt10Lkm_1"></span>
+			</div>
+
+			<p class="result" id="maxChanceHeadDamage_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit_1"></p>
+			<p class="result full" id="fullHead_1"></p>
+
+					<!-- Шанс за 100 выстрелов -->
+			<div class="break annotation">
+				<p id="break100lkm_1"></p>
+				<span class="prompt" id="prompt100Lkm_1"></span>
+			</div>
+
+			<p class="result" id="maxChanceHeadDamage100_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit100_1"></p>
+			<p class="result full" id="fullHead100_1"></p>
+
+								<!-- ВЗ -->
+			<p class="result" id="maxChanceHeadDamage100PB_1"></p>
+			<p class="result crit" id="maxChanceHeadCrit100PB_1"></p>
+			<p class="result full" id="fullHead100PB_1"></p>
+			<p class="result full" id="fullHead100PBSum_1"></p><br>
+								<!--    -->
+
+		</div>
+	</main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
